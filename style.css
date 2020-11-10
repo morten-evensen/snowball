@@ -1,0 +1,366 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/* Fonts
+font-family: 'Raleway', sans-serif;
+font-family: 'Roboto Slab', serif;
+*/
+
+
+body {
+	line-height: 1;
+    font-family: 'Roboto Slab', serif;
+    background-color: #DCE1E3;
+}
+
+/* Top of page
+******************/
+
+header {
+    font-family: 'Raleway', sans-serif;
+    display: flex;
+    background-color: #2e323c;
+    color: white;
+    padding: 20px 20px 20px 20px;
+}
+
+.logo-wrap {
+    flex: 1;
+    font-size: 50px;
+    font-weight: 500;
+}
+h1 a {
+    text-decoration: none;
+    color: inherit;
+}
+
+nav {
+    flex: 1;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+nav ul {
+    float: right;
+}
+
+nav ul li {
+    display: inline-block;
+    padding: 10px 10px 0 10px;;
+}
+nav ul li a {
+    text-decoration: none;
+    color: inherit;
+}
+
+nav ul li a:hover {
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+/* Main content
+******************/
+
+.main-text {
+    background-color: #91b3bc;
+    padding: 50px 0 50px 0;
+    font-size: 20px;
+}
+
+.main-text h2 {
+    font-size: 40px;
+    padding: 0 0 30px 0;
+    text-align: center;
+}
+
+.main-paragraphs {
+    margin: auto;
+    max-width: 500px;
+}
+
+.main-paragraphs p {
+    padding: 0 0 10px 0;
+    line-height: 1.5;
+}
+
+.bildetekstwrap {
+    display: flex;
+    margin: 0 150px 5px 150px;
+    border: 1px solid black;
+    background-color: #f3f3f3;
+    font-size: 25px;
+}
+
+.image-wrap, .tekstwrap {
+    flex: 1;
+    max-width: 1000px;
+    padding: 2vw;   
+}
+
+.image-wrap img {
+    max-width: 100%;
+    border: 1px solid black; 
+}
+
+.tekstwrap p{
+    line-height: 1.5;
+}
+
+.modal-menu {
+    display: none;
+    padding:  100px 0;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.9);
+    text-align: center;
+    transition: 0.5s;
+    font-size: 40px;
+    color: white;
+}
+.modal-menu a{
+    text-decoration: none;
+    color: white;
+}
+
+.fa {
+    display: none;
+}
+.x {
+    position: relative;
+    left: 45vw;
+    bottom: 80px;
+}
+
+ ul a {
+        text-decoration: none;
+        color: inherit;
+    }
+
+.bottom-content {
+    text-align: center;
+    font-size: 25px;
+    background-color: #91b3bc;
+    padding: 20px 0;
+}
+
+/* About us
+******************/
+
+.about-wrap {
+    padding: 50px 20%;
+}
+
+.about-wrap p {
+    line-height: 1.2;
+    padding-bottom: 10px;
+}
+
+.header-wrap {
+    text-align: center;
+    padding: 20px;
+}
+
+.about-wrap h2, .contact-wrap h2 {
+    font-size: 30px;
+    margin: auto;
+    font-weight: 900;
+}
+
+.about-wrap h3 {
+    font-size: 30px;
+    padding: 20px;
+    font-weight: 600;
+}
+
+.about-wrap h4 {
+    font-weight: 600;
+    font-size: 20px;
+    padding: 10px;
+}
+
+.team-text {
+    text-align: center;
+}
+
+.contact-element {
+    padding: 10px
+}
+
+/* Contact
+******************/
+
+.contact-wrap  {
+    text-align: center;
+}
+
+
+input[type=text], textarea {
+    box-sizing: border-box;
+    width: 80%;
+    padding: 5px;
+    margin: 10px 0 0 0;
+    max-width: 500px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    
+    padding: 10px 20px;
+    background-color: limegreen;
+    border-radius: 20px;
+}
+
+input[type=submit]:hover {
+    opacity: 0.9;
+    cursor: pointer;
+    color: white;
+}
+
+input[type=submit]:active {
+    opacity: 1;
+    cursor: pointer;
+    color: white;
+    background-color: black;
+}
+
+
+/* Products
+******************/
+
+.products-wrap {
+    padding: 50px 20%;
+}
+
+.products-wrap h2 {
+    text-align: center;
+    font-size: 30px;
+    padding-bottom: 10px;
+    font-weight: 900;
+}
+
+.products-wrap p {
+    line-height: 1.2;
+    padding-bottom: 10px;
+}
+
+.images-wrap {
+    display: flex;
+    margin: 0 100px;
+}
+
+.image-content {
+    flex: 1;
+    margin: 5px 5px 40px 5px;
+    text-align: center;
+}
+
+.image-content h3 {
+    font-size: 25px;
+    padding-bottom: 20px;
+}
+
+.image-content img {
+    width: 100%;
+    border: 1px solid black;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+@media only screen and (max-width: 840px){
+    h1 {
+        font-size: 50%;
+    }
+     .bildetekstwrap {
+        border: none;
+        font-size: 20px;
+    }
+    .bildetekstwrap:nth-child(odd){
+        flex-direction: column;
+        margin: 0 0px 0 0px;
+        padding: 10px;
+    }
+    .bildetekstwrap:nth-child(even){
+        flex-direction: column-reverse;
+        margin: 0 0px 0 0px;
+        background-color: #f8f8f1;
+        padding: 10px;
+    }
+    .main-paragraphs{
+        padding: 0 25px;
+
+    }
+    nav ul li {
+        display: none;
+    }
+    .fa {
+        display: block;
+    }
+    .modal-wrap div:target {
+        display: block;
+    }
+    .bottom-content {
+        font-size: 20px;
+        padding: 20px 10px;
+    }
+    
+    /* About us
+******************/
+
+    .about-wrap {
+        padding: 50px 5%;
+    }
+/* Products
+******************/
+    
+    .images-wrap {
+        flex-direction: column;
+         margin: 0 30px;
+}
+    
+}
