@@ -136,6 +136,18 @@ nav ul li a:hover {
     font-size: 25px;
 }
 
+ .bildetekstwrap:nth-child(odd){
+        
+        margin: 0 0px 0 0px;
+        padding: 10px;
+    }
+    .bildetekstwrap:nth-child(even){
+        flex-direction: row-reverse;
+        margin: 0 0px 0 0px;
+        background-color: #f8f8f1;
+        padding: 10px;
+    }
+
 .image-wrap, .tekstwrap {
     flex: 1;
     max-width: 1000px;
